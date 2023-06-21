@@ -15,14 +15,18 @@ gevent
 
 Prepare:
 Download the test python file link: https://raw.githubusercontent.com/liuchuhan1/translateserver/main/test.py
+
 In CMD,type follow command:
 python test.py
+
 Wait for a minute, the time will be long for download the model.
 if show japanese result , it means the model is downloaded,then type follow command:
+
 ct2-transformers-converter --model facebook/m2m100_418M --output_dir PATH_WHERE_YOU_WANT_TO_SAVE_THE_MODEL
 
 
 Open the ct2server.py by TXT tools
+
 In this Python file:
 Change the model path to the folder where your choose above.
 change source to your source language type and dest to your target language type in short like follow
