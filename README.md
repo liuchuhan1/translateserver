@@ -36,15 +36,23 @@ more language should refer the ISO link: https://en.wikipedia.org/wiki/List_of_I
 the location is there:
 
 @app.route('/translater', methods=['POST'])
+
     def translate():
+    
         print(request.json)
+        
         source="en" <-------The source language type
+        
         dest="ko"   <-------The target language type
+        
         text1 = request.json['text']
+        
         print("Original Text: \n"+text1)
+        
         textarray = re.split('\n', text1)
 
 
 
 then you can type follow command to start the server:
+
 python ct2server.py
