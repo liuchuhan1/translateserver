@@ -41,41 +41,18 @@ if show japanese result , it means the model is downloaded,then type follow comm
 
 ct2-transformers-converter --model facebook/m2m100_418M --output_dir PATH_WHERE_YOU_WANT_TO_SAVE_THE_MODEL
 
+Download the server python file link: https://raw.githubusercontent.com/liuchuhan1/translateserver/main/ct2server.py
 
+then you can type follow command to start the server:
 
-Open the ct2server.py by TXT tools
+python ct2server.py
 
+Input the model path to the folder where your choose above.
 
-In this Python file:
-
-Change the model path to the folder where your choose above.
-
-change source to your source language type and dest to your target language type in short like follow:
+Input your source language type and your target language type in short like follow
 
 ru for Russian,zh for Chinese,ko for Korean,en for English,ja for japanese
 
 more language should refer the ISO link: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 
-the location is there:
-
-    @app.route('/translater', methods=['POST'])
-
-    def translate():
-    
-        print(request.json)
-        
-        source="en" <-------The source language type
-        
-        dest="ko"   <-------The target language type
-        
-        text1 = request.json['text']
-        
-        print("Original Text: \n"+text1)
-        
-        textarray = re.split('\n', text1)
-
-
-
-then you can type follow command to start the server:
-
-python ct2server.py
+then the server will start.
