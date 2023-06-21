@@ -13,7 +13,6 @@ ctranslate2
 flask
 gevent
 
-
 Prepare:
 Download the test python file link: https://raw.githubusercontent.com/liuchuhan1/translateserver/main/test.py
 In CMD,type follow command:
