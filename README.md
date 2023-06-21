@@ -35,7 +35,7 @@ more language should refer the ISO link: https://en.wikipedia.org/wiki/List_of_I
 
 the location is there:
 
-@app.route('/translater', methods=['POST'])
+    @app.route('/translater', methods=['POST'])
 
     def translate():
     
