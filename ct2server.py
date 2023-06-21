@@ -16,9 +16,7 @@ if torch.cuda.device_count() > 0:
     print("GPU Acc Enable")
 else:
     print("GPU Acc Disable")
-modelpath = input("Model Path To The Folder : ")
-source = input("Source Language Type : ")
-dest = input("Target Language Type : ")
+modelpath=input("Input your model path : ")
 
 try:
     translator = ctranslate2.Translator(model_path=modelpath,
@@ -43,15 +41,16 @@ try:
     def translate():
         print(request.json)
         text1 = request.json['text']
+        source=request.json["source"]
+        dest=request.json["target"]
         print("Original Text: \n" + text1)
-
-        if (source == 'zh') | (source == "ja"):
+        if (source == 'zh-CN') | (source == "ja"):
+            if source=="zh-CN":
+                source="zh"
             text1.replace("。", "\n")
         else:
             text1.replace(".", "\n")
         textarray = re.split('\n', text1)
-        for strs in textarray:
-            if strs
         print(textarray)
         result1 = []
         print("Translated Text: \n")
