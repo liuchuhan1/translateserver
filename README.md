@@ -8,6 +8,8 @@ Windows 10 19045 x64
 
 Anaconda Latest
 
+
+
 Conda Enviroment:
 
 Python 3.7
@@ -21,6 +23,9 @@ ctranslate2
 flask
 
 gevent
+
+
+
 
 Prepare:
 
@@ -37,7 +42,9 @@ if show japanese result , it means the model is downloaded,then type follow comm
 ct2-transformers-converter --model facebook/m2m100_418M --output_dir PATH_WHERE_YOU_WANT_TO_SAVE_THE_MODEL
 
 
+
 Open the ct2server.py by TXT tools
+
 
 In this Python file:
 
