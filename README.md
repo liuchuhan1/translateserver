@@ -49,10 +49,6 @@ python ct2server.py
 
 Input the model path to the folder where your choose above.
 
-Input your source language type and your target language type in short like follow
-
-ru for Russian,zh for Chinese,ko for Korean,en for English,ja for japanese
-
 more language should refer the ISO link: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 
 then the server will start.
