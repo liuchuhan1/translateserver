@@ -8,7 +8,7 @@ Windows 10 19045 x64
 
 Anaconda Latest
 
-
+----------------------------------------------------------------------------------------------------------------------------
 
 Conda Enviroment:
 
@@ -24,8 +24,7 @@ flask
 
 gevent
 
-
-
+----------------------------------------------------------------------------------------------------------------------------
 
 Prepare:
 
@@ -55,8 +54,7 @@ Tips: Method 1 seems complex but can fit for other transformers model, you can c
 the model you can search in huggingface : https://www.huggingface.co/models
 Otherwise, the Method 2 and 3 are simple but useful enough.
 
-
-
+----------------------------------------------------------------------------------------------------------------------------
 
 Download the server python file link: https://raw.githubusercontent.com/liuchuhan1/translateserver/main/ct2server.py
 
