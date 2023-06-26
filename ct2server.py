@@ -16,6 +16,9 @@ if torch.cuda.device_count() > 0:
     print("GPU Acc Enable")
 else:
     print("GPU Acc Disable")
+
+source=input("Input the source language : ")
+dest=input("Input the target language : ")
 modelpath=input("Input your model path : ")
 
 try:
@@ -41,17 +44,12 @@ try:
     def translate():
         print(request.json)
         text1 = request.json['text']
-        source=request.json["source"]
-        dest=request.json["target"]
         print("Original Text: \n" + text1)
-        if (source == 'zh-CN') | (source == "ja"):
-            if source=="zh-CN":
-                source="zh"
+        if (source == 'zh') | (source == "ja"):
             text1.replace("。", "\n")
         else:
             text1.replace(".", "\n")
         textarray = re.split('\n', text1)
-        print(textarray)
         result1 = []
         print("Translated Text: \n")
         for str1 in textarray:
